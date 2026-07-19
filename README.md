@@ -1,93 +1,44 @@
-# 🧠 Agentic AI Research Paper Intelligence System
+# Agentic AI Research Paper Intelligence System
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![LangChain](https://img.shields.io/badge/LangChain-Enabled-green.svg)
-![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-orange.svg)
-![Groq](https://img.shields.io/badge/Groq-LLM-black.svg)
-![License](https://img.shields.io/badge/License-MIT-purple.svg)
+**Course / Project:** AI & Machine Learning Final Project  
+**Author:** [Your Name / Student ID]
 
-An advanced, AI-powered pipeline designed to intelligently process, index, and analyze research papers using Large Language Models (LLMs) and agentic workflows. By leveraging state-of-the-art NLP models, embedding techniques, and conversational agents, this system transforms raw academic datasets into an interactive, queryable knowledge base.
+## 📌 Project Overview
 
----
+This project is an AI-driven system designed to process, analyze, and query academic research papers. It acts as an intelligent assistant that can read through datasets of research papers and answer queries, extract important keywords, and compare different methodologies using Natural Language Processing (NLP) and Large Language Models (LLMs).
 
-## ✨ Features
+The goal of this project was to learn and implement **Retrieval-Augmented Generation (RAG)** and **Agentic Workflows** using modern AI frameworks.
 
-- **Automated Data Ingestion**: Seamlessly load and preprocess research paper datasets using Hugging Face `datasets` and `pandas`.
-- **Semantic Vector Search**: Generate dense embeddings using `sentence-transformers` and index them with **FAISS** for lightning-fast semantic retrieval.
-- **Agentic Workflow Architecture**: Utilize **LangChain** and **LangGraph** to orchestrate intelligent AI agents capable of routing queries to specialized tools.
-- **LLM Integration via Groq**: Powered by **ChatGroq** for high-speed, accurate reasoning and conversational intelligence.
-- **Keyword & Entity Extraction**: Integrates **KeyBERT** and Hybrid NER for extracting the most critical keywords and entities from academic literature.
-- **Paper Comparison & Summarization**: Dedicated tools for comparing multiple papers and summarizing their key contributions in markdown format.
+## 🎯 Objectives
 
----
+- Build a vector database to store and retrieve research paper embeddings.
+- Develop an AI agent that can route queries to specific tools (e.g., search, keyword extraction, or comparison).
+- Gain hands-on experience with Hugging Face models, vector search, and LLM orchestration.
 
-## 🛠️ Tech Stack
+## 🛠️ Methodology & Tech Stack
 
-- **Core**: Python, Pandas, NumPy
-- **Machine Learning & NLP**: Hugging Face Transformers, Sentence-Transformers, KeyBERT
-- **Vector Database**: FAISS (Facebook AI Similarity Search)
-- **Agent Framework**: LangChain, LangChain Core
-- **LLM Provider**: Groq (via `langchain_groq`)
+This project was built using the following technologies:
+- **Data Handling:** `pandas`, `datasets` (Hugging Face)
+- **Embeddings & NLP:** `sentence-transformers` for creating dense vectors, `KeyBERT` for keyword extraction.
+- **Vector Search:** `FAISS` to perform fast similarity searches across paper abstracts.
+- **LLM & Agents:** `LangChain` and `LangGraph` were used to create the AI agent, powered by the **Groq API** (`ChatGroq`) for fast inference.
 
----
+## 🚀 How to Run
 
-## 🚀 Getting Started
+1. **Prerequisites:** 
+   - Python 3.9+ installed.
+   - A free API key from [Groq](https://console.groq.com/).
 
-### Prerequisites
+2. **Setup:**
+   - Clone this repository.
+   - Open `Agentic_AI_Research_Paper_Intelligence.ipynb` in Jupyter Notebook or upload it to Google Colab.
+   
+3. **Execution:**
+   - Run the first cell to install all required libraries (`langchain`, `faiss-cpu`, `sentence-transformers`, etc.).
+   - When prompted, securely enter your `GROQ_API_KEY`.
+   - Run all subsequent cells to download the dataset, build the FAISS index, and initialize the agent.
+   - Test the system by asking the agent questions like: *"Extract the top 5 keywords from Deep Learning for Medical Image Reconstruction."*
 
-Ensure you have Python 3.9+ installed. The project is structured as a Jupyter Notebook for interactive execution and easy experimentation.
+## 📚 What I Learned
 
-### Installation
-
-1. Clone the repository (or download the source code):
-   ```bash
-   git clone https://github.com/your-username/agentic-research-intelligence.git
-   cd agentic-research-intelligence
-   ```
-
-2. Open the Jupyter Notebook:
-   ```bash
-   jupyter notebook Agentic_AI_Research_Paper_Intelligence.ipynb
-   ```
-   *(Alternatively, you can run it directly on Google Colab)*
-
-3. Install the required dependencies within the first cell of the notebook, which typically include:
-   ```bash
-   pip install datasets pandas sentence-transformers faiss-cpu transformers huggingface_hub keybert langchain langchain_groq
-   ```
-
-### Configuration
-
-You will need a valid **Groq API Key** to power the LangChain agent. Set your API key in your environment or within the Colab `userdata` secrets:
-```python
-os.environ["GROQ_API_KEY"] = "your-groq-api-key-here"
-```
-
----
-
-## 📖 Usage
-
-1. **Initialize the Database**: Run the initial cells to download the research paper dataset, generate sentence embeddings, and build the FAISS index.
-2. **Setup the Agent**: Initialize the `ChatGroq` LLM and the LangChain toolset (Search, Keyword Extraction, Compare Papers).
-3. **Query the System**: Pass natural language queries to the agent. Examples:
-   - *"Extract the top 5 keywords from Deep Learning for Medical Image Reconstruction."*
-   - *"Find papers related to hybrid NER architectures and compare their methodologies."*
-   - *"What are the most recent advancements in agentic workflows based on the database?"*
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request or open an Issue if you encounter any bugs or have feature requests.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+Throughout this project, I learned how to integrate traditional NLP pipelines with modern LLMs. Using LangChain tools taught me how agents "think" and decide which function to execute based on a user's prompt. 
