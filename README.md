@@ -198,18 +198,7 @@ $env:PYTHONPATH="backend"; python -m pytest backend/tests/test_api.py -v
 
 ---
 
-## 💼 Resume Bullets
 
-Copy and paste directly into your resume:
-
-> **Agentic AI Research Paper Intelligence System** | *Python (FastAPI), React.js, PostgreSQL, Celery, Redis, LangChain, Neo4j, Docker*
-> - Engineered an end-to-end full-stack research discovery platform serving 15,000+ academic papers with sub-100ms semantic search.
-> - Architected a high-throughput backend using **FastAPI** and **PostgreSQL**, decoupling heavy PDF parsing and embedding jobs using **Celery** and **Redis** background workers.
-> - Developed an agentic retrieval pipeline with **LangChain** and **Groq (Llama-3.1)** capable of dynamic tool routing for summarization, keyword extraction, and comparative analysis.
-> - Designed a modern, responsive **React.js** interface with real-time SSE streaming for agent reasoning and interactive citation graph exploration via **Neo4j**.
-> - Containerized the entire multi-service ecosystem (API, Client, Celery Worker, Redis, Postgres) using **Docker Compose**.
-
----
 
 ## 📄 License
 This project is licensed under the MIT License.
