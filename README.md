@@ -1,5 +1,6 @@
 # PaperMind AI: Agentic Research Paper Intelligence System
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-success?style=for-the-badge&logo=vercel&logoColor=white)](https://frontend-eight-ashen-27.vercel.app)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-18.2+-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org)
@@ -8,6 +9,8 @@
 [![Neo4j](https://img.shields.io/badge/Neo4j-5.18+-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)](https://neo4j.com)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
+
+> 🌐 **Live Interactive Demo:** [https://frontend-eight-ashen-27.vercel.app](https://frontend-eight-ashen-27.vercel.app)
 
 **PaperMind AI** is an end-to-end, enterprise-grade full-stack research discovery and intelligence system. It indexes over 15,000+ academic publications, decoupling heavy text parsing and neural embedding generation into **Celery background workers backed by Redis**, exposing high-throughput **FastAPI** REST services, and rendering an interactive **React** exploration dashboard complete with **Neo4j citation graph modeling** and **LangChain/Groq agentic workflows**.
 
